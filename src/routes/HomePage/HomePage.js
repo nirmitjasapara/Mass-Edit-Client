@@ -14,7 +14,7 @@ export default class HomePage extends Component {
         <h3>
           {sectionName}
         </h3>
-        {(data) ? data.map(r =>
+        {(data?.length) ? data.map(r =>
           <Link
               to={sectionPath + r.id}
               key={sectionPath + r.id}
