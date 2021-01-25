@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Section, InputArea, Button } from '../../components/Utils/Utils'
+import { Section, Button } from '../../components/Utils/Utils'
 import CustomContext from '../../contexts/CustomContext';
 import './DonePage.css'
 

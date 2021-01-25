@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import CustomContext from '../../contexts/CustomContext';
-import ApiService from '../../services/api-service';
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import TokenService from '../../services/token-service';
 import './HomePage.css'
 
 export default class HomePage extends Component {

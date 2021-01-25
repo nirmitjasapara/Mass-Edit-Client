@@ -2,7 +2,7 @@ import TokenService from '../services/token-service'
 import config from '../config'
 
 const ApiService = {
-  getDocs() {
+  /*getDocs() {
     return new Promise((resolve, reject) => 
       resolve ({
         original: 
@@ -71,7 +71,7 @@ const ApiService = {
     console.log(body);
     return new Promise((resolve, reject) => resolve ({
       }))
-  },
+  },*/
   getDocs() {
     return fetch(`${config.API_ENDPOINT}/docs`, {
       headers: {
