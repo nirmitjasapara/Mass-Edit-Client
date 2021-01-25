@@ -1,0 +1,32 @@
+:root {
+  --nav-height: 50px;
+  --sidebar-width: 0px;
+}
+.App {
+    min-height: 100vh;
+}
+.frame {
+  display: flex;
+  flex-direction: row;
+}
+.red {
+    color: red;
+    border: solid red 2px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.default {
+    color: #444;
+    border: solid grey 2px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+@media screen and (min-width: 700px) {
+  :root {
+    --sidebar-width: 300px;
+  }
+}

@@ -1,0 +1,12 @@
+h2 {
+    margin-block-start: 0px;
+}
+.text-box {
+    border: 1px solid #ddd;
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 4px;
+}
