@@ -4,13 +4,12 @@ replace words or phrases in a text with better substitutions.
 These substitutions are then saved so you can use this template
 for another similar text. Possible applications are: mass translations, decoding, and any time the user is repeatedly replacing the same set of words.
 
+[Go to the app](https://mass-edit-client.vercel.app/)
+
+![main page image](./images/main.png)
 
 
 
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
