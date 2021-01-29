@@ -31,6 +31,14 @@ export default class HomePage extends Component {
     const { docs = {} } = this.context
     return (
       <main className="main">
+        <h3 className='default'>Mass edit is an app that allows you to 
+          replace words or phrases in a text with better substitutions.
+          These substitutions are then saved so you can use this template
+          for another similar text.
+          First create a project by clicking the button at the bottom right.
+          Then edit it when it appears in the edit section.
+          Any user (including you) can then judge if the text is valid.
+          If it is validated, the final result will appear in the done section.</h3>
         {this.renderDocList({
           sectionName: 'Edit',
           sectionPath: '/edit/',

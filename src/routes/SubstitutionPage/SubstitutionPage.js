@@ -79,7 +79,7 @@ export default class SubstitutionPage extends Component {
       {templates.map((x, i) =>
       <option key={'template_' + i} value={x.id}>{x.name}</option>
       )}
-      <option key='template_default' value={''}>Create</option>
+      <option key='template_default' value={''}>Create template</option>
     </select>)
   }
 
@@ -144,7 +144,10 @@ export default class SubstitutionPage extends Component {
       <main className="main">
         <Section className='AddPage'>
           <h2>Substitution</h2>
-          <p>Add two words to substitute one with the other</p>
+          <p>Please add two words to substitute one with the other.
+             You may also click the plus button to add more replacements,
+             or the minus (for 2+ substitutions) to delete one.
+          </p>
           <p className='text-box'>
             {this.context.getOriginal(Number(this.props.match.params.id))?.text}
           </p>

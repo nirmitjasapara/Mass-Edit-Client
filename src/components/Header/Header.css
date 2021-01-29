@@ -9,6 +9,7 @@
   background-color: #3086ff;
   box-shadow: 0px 1px 1px #888;
   height: var(--nav-height);
+  width: 100%;
 }
 
 .Header h1 {
