@@ -83,12 +83,10 @@ export default class SubstitutionPage extends Component {
     </select>)
   }
 
-  // handle select change
   handleSelectChange(e) {
     this.setState({ selection: e.target.value })
   }
 
-  // handle input change
   handleInputChange(e, i) {
     const { substitutes } = this.state
     const { name, value } = e.target;
