@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 const CustomContext = React.createContext({
   docs: null,
   templates: [],
   error: null,
   setError: () => {},
-  clearError: () => { },
+  clearError: () => {},
   setTemplates: () => {},
   clearTemplates: () => {},
   setDocs: () => {},
@@ -13,46 +13,46 @@ const CustomContext = React.createContext({
   getOriginal: () => {},
   getEdited: () => {},
   getApproved: () => {}
-})
+});
 
-export default CustomContext
+export default CustomContext;
 
 export class CustomProvider extends Component {
   state = {
     docs: null,
     templates: [],
-    error: null,
+    error: null
   };
 
   setError = error => {
-    console.error(error)
-    this.setState({ error })
-  }
+    console.error(error);
+    this.setState({ error });
+  };
 
   clearError = () => {
-    this.setState({ error: null })
-  }
+    this.setState({ error: null });
+  };
   setDocs = docs => {
-    this.setState({ docs })
-  }
+    this.setState({ docs });
+  };
   clearDocs = () => {
-    this.setState({ docs: null })
-  }
+    this.setState({ docs: null });
+  };
   setTemplates = templates => {
-    this.setState({ templates })
-  }
+    this.setState({ templates });
+  };
   clearTemplates = () => {
-    this.setState({ templates: [] })
-  }
+    this.setState({ templates: [] });
+  };
   getOriginal = id => {
-    return this.state.docs?.original.find(i => i.id===id)
-  }
+    return this.state.docs?.original.find(i => i.id === id);
+  };
   getEdited = id => {
-    return this.state.docs?.edited.find(i => i.id===id)
-  }
+    return this.state.docs?.edited.find(i => i.id === id);
+  };
   getApproved = id => {
-    return this.state.docs?.approved.find(i => i.id===id)
-  }
+    return this.state.docs?.approved.find(i => i.id === id);
+  };
   render() {
     const value = {
       docs: this.state.docs,
@@ -67,11 +67,11 @@ export class CustomProvider extends Component {
       getOriginal: this.getOriginal,
       getEdited: this.getEdited,
       getApproved: this.getApproved
-    }
+    };
     return (
       <CustomContext.Provider value={value}>
         {this.props.children}
       </CustomContext.Provider>
-    )
+    );
   }
 }

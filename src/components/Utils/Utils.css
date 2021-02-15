@@ -1,46 +1,47 @@
-.Input, .InputArea{
-    border: 1px solid #ddd;
-    display: block;
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    padding: 10px;
-    text-align: left;
-    border-radius: 4px;
+.Input,
+.InputArea {
+  border: 1px solid #ddd;
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  text-align: left;
+  border-radius: 4px;
 }
 .InputArea {
-    width: calc(100% - 20px);
+  width: calc(100% - 20px);
 }
 
-.Input::placeholder{
-    color: #ccc;
+.Input::placeholder {
+  color: #ccc;
 }
 
 .Button {
-    border: 1px solid #aaa;
-    background-color: #333;
-    color: white;
-    font-size: 1.1em;
-    border-radius: 4px;
-    padding: 8px 12px;
-    font-weight: bold;
-    width: 100%;
-    cursor: pointer;
+  border: 1px solid #aaa;
+  background-color: #333;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
 }
 .greenbg {
-    background-color: #3a3;
+  background-color: #3a3;
 }
 .redbg {
-    background-color: #a33;
+  background-color: #a33;
 }
 .yellowbg {
-    background-color: #aa3;
+  background-color: #aa3;
 }
 
 .Required {
-    color: #CA1551;
-    font-family: Arial;
-    font-weight: bold;
+  color: #ca1551;
+  font-family: Arial;
+  font-weight: bold;
 }
 
 .Section {

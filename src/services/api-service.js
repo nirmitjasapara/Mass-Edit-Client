@@ -1,5 +1,5 @@
-import TokenService from '../services/token-service'
-import config from '../config'
+import TokenService from "../services/token-service";
+import config from "../config";
 
 const ApiService = {
   /*getDocs() {
@@ -74,72 +74,56 @@ const ApiService = {
   },*/
   getDocs() {
     return fetch(`${config.API_ENDPOINT}/docs`, {
-      headers: {
-      },
-    })
-      .then(res =>
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
+      headers: {}
+    }).then(res =>
+      !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
+    );
   },
   getTemplates() {
     return fetch(`${config.API_ENDPOINT}/templates`, {
       headers: {
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
-      },
-    })
-    .then(res =>
-      (!res.ok)
-        ? res.json().then(e => Promise.reject(e))
-        : res.json()
-    )
+        authorization: `bearer ${TokenService.getAuthToken()}`
+      }
+    }).then(res =>
+      !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
+    );
   },
   addDoc(body) {
     return fetch(`${config.API_ENDPOINT}/docs`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'content-type': 'application/json',
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
+        "content-type": "application/json",
+        authorization: `bearer ${TokenService.getAuthToken()}`
       },
       body: JSON.stringify(body)
-    })
-      .then(res =>
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
+    }).then(res =>
+      !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
+    );
   },
   substitute(body) {
     return fetch(`${config.API_ENDPOINT}/templates`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'content-type': 'application/json',
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
+        "content-type": "application/json",
+        authorization: `bearer ${TokenService.getAuthToken()}`
       },
       body: JSON.stringify(body)
-    })
-      .then(res =>
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
+    }).then(res =>
+      !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
+    );
   },
   judge(body) {
     return fetch(`${config.API_ENDPOINT}/judge`, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'content-type': 'application/json',
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
+        "content-type": "application/json",
+        authorization: `bearer ${TokenService.getAuthToken()}`
       },
       body: JSON.stringify(body)
-    })
-      .then(res =>
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
+    }).then(res =>
+      !res.ok ? res.json().then(e => Promise.reject(e)) : res.json()
+    );
   }
-}
+};
 
-export default ApiService
+export default ApiService;
