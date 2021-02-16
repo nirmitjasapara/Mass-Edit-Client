@@ -39,9 +39,12 @@ export default class LoginForm extends Component {
         </div>
         <div className="user_name">
           <label htmlFor="LoginForm__user_name">User name</label>
-          <Input required name="user_name" id="LoginForm__user_name">
-            DefaultUser
-          </Input>
+          <Input
+            required
+            name="user_name"
+            id="LoginForm__user_name"
+            value="DefaultUser"
+          ></Input>
         </div>
         <div className="password">
           <label htmlFor="LoginForm__password">Password</label>
@@ -50,9 +53,8 @@ export default class LoginForm extends Component {
             name="password"
             type="password"
             id="LoginForm__password"
-          >
-            Password123
-          </Input>
+            value="Password123"
+          ></Input>
         </div>
         <Button type="submit">Login</Button>
       </form>
