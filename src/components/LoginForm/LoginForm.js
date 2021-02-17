@@ -43,7 +43,7 @@ export default class LoginForm extends Component {
             required
             name="user_name"
             id="LoginForm__user_name"
-            value="DefaultUser"
+            defaultValue="DefaultUser"
           ></Input>
         </div>
         <div className="password">
@@ -53,7 +53,7 @@ export default class LoginForm extends Component {
             name="password"
             type="password"
             id="LoginForm__password"
-            value="Password123!"
+            defaultValue="Password123!"
           ></Input>
         </div>
         <Button type="submit">Login</Button>
